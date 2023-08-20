@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #b0ddac;
+}
+
+main {
+    max-width: 800px;
+    background-color: rgb(127, 189, 87);
+    border: 3px solid black;
+    margin: 200px auto;
+    padding-left: 25px;   
+}
+
+/* První sekce - zadávací pole úkolů*/
+
+.first-section h2 {
+    text-align: center;
+
+}
+
+.my-form input[type="text"] {
+    width: 70%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;  
+}
+
+
+.my-form input[type="submit"] {
+    width: 70px;
+    height: 30px;
+    margin-left: 15px;
+    padding-top: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+
+.my-form input[type="submit"]:hover {
+    background-color: #b0ddac;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.first-section h3 {
+    text-decoration: underline;
+
+}
+
+/* Druhá sekce - pole s úkoly */
+
+
+
+
+.one-todo {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 10px;
+    
+}
+
+.one-content {
+    display: flex;
+    width: 80%;
+}
+
+.one-content input[type="text"] {
+    width: 90%;
+    font-size: 15px;
+}
+
+.one-todo input[type="checkbox"]{
+    width: 20px;
+}
+
+/*  Tlačítka */
+
+.actions {
+    
+    position: relative;
+    right: 25px;
+    padding-top: 2px; 
+}
+
+.edit {
+    width: 60px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid black;  
+}
+
+.edit:hover {
+    background-color: #b0ddac;
+}
+
+.delete {
+    width: 60px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.delete:hover {
+    background-color: #b0ddac; 
+}
+
+
+
+/* Splněný úkol */
+.one-todo.done input[type="text"] {
+    text-decoration: line-through;
+    color: grey;
+}
+
