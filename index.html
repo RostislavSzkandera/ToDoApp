@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoApp</title>
+</head>
+<body>
+    <main>
+        <!-- Vytvoření zadávacího pole úkolů -->
+        
+        <section class="first-section">
+            <h2>ToDoApp</h2>
+            <form class="my-form">
+                <input type="text" name="content" placeholder="Napiš úkol">
+                <input type="submit" value="Vložit">
+            </form>
+            <h3>Seznam úkolů:</h3>
+
+        </section>
+        <!-- Vytvoření pole s úkoly -->
+        <section class="second-section">
+            <div class="one-todo done">
+                <input type="checkbox">
+                <div class="one-content">
+                    <input type="text" value="Koupit mléko" readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">Upravit</button>
+                    <button class="delete">Smazat</button>
+                </div>
+            </div>
+            <div class="one-todo done">
+                <input type="checkbox">
+                <div class="one-content">
+                    <input type="text" value="Vyvenčit psa" readonly>
+                </div>
+                <div class="actions">
+                    <button class="edit">Upravit</button>
+                    <button class="delete">Smazat</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
